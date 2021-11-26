@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Website</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <ul>
+            <li class="logo"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="Logo1.png"></li>
+            <script>
+                function bigImg(x) {
+                  x.style.height = "120px";
+                  x.style.width = "120px";
+                }
+                function normalImg(x) {
+                  x.style.height = "100px";
+                  x.style.width = "100px";
+                }
+                </script>
+            <li class="active">Home</li>
+            <li><a href ="https://artmagicsk.blogspot.com/?m=1.html" class="blog"><span>Blog</span></a></li>
+            <li><a href ="Art Gallery.html" class="art-gallery"><span>Art Gallery</span></a></li>
+            <li><a href ="Contact.html" class="contact"><span>Contact</span></a></li>
+            <li><a href="Subscribe.html" class ="sub-btn"><span>Subscribe</span></a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="app-text">
+            <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Welcome to the World of Art</h1>
+            <script>
+                function mouseOver() {
+                  document.getElementById("demo").style.color = "black";
+                }
+                
+                function mouseOut() {
+                  document.getElementById("demo").style.color = "white";
+                }
+                </script>                
+            <p>A work of art which did not begin in emotion is not art</p>
+        </div>
+        <div class="app-pic">
+            <img src="boy.webp">
+        </div>
+        <video id="background-video" autoplay loop muted poster="video2.jpg">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+        <div class="social-icons">
+        <ul>
+            <li><a href="https://www.instagram.com/siddak._.sk/" ><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/siddak-bagga-60921b218/"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://github.com/siddak13"><i class="fa fa-github"></i></a></li>
+        </ul>
+        </div>
+        <div class="com-btn">
+            <div class="com-btn-inner">
+              <ul style="list-style-type:none;">
+                <li><a href="Comment.html"><i class="fa fa-comments">
+                </i></a></li>
+                </ul>
+            </div>
+            <small><b>COMMENTS</b></small>
+        </div>
+        <nav role="navigation">
+            <div id="menuToggle" >
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="Website.html"><li>Home</li></a>
+                <a href="https://artmagicsk.blogspot.com/?m=1.html"><li>Blog</li></a>
+                <a href="Art Gallery.html"><li>Art Gallery</li></a>
+                <a href="Contact.html"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+          <div class='cursor' id="cursor"></div>
+          <script>var cursor = document.getElementById("cursor");
+            document.body.addEventListener("mousemove", function(c) {
+              cursor.style.left = c.clientX + "px",
+                cursor.style.top = c.clientY + "px";
+            });
+            </script>
+            <footer class="background">
+              
+              <p class="text-footer">
+                Bringing Joy of Creativity :)
+              </p>
+              <div class="quick-links">
+
+                <ul>
+             <li> <a href="https://www.quora.com/profile/Siddak-Bagga" ><i class="fa fa-quora"></i></a></li>
+             <li> <a href="https://www.facebook.com/"><i class="fa fa-share-alt"></i></a></li>
+             <li><a href="#"><i class="fa fa-paper-plane"></i></a></div></li></ul>
+            </footer>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+	<h2>Contact Us</h2>
+</header>
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+<form id="waterform" method="post">
+
+<div class="formgroup" id="name-form">
+    <label for="name">Your name*</label>
+    <input type="text" id="name" name="name" required />
+    <form action="/action_page.php" method="post">
+</div>
+
+<div class="formgroup" id="email-form">
+    <label for="email">Your e-mail*</label>
+    <input type="email" id="email" name="email" required />
+</div>
+<div class="formgroup" id="message-form">
+    <label for="message">Your message</label>
+    <textarea id="message" name="message"></textarea>
+</div>
+	<input type="submit" onclick="myFunction()" value="Send your message!"/>
+    <script>
+      function myFunction() {
+     alert("We will contact with you soon!");
+     document.write("Your data is collected")
+}
+    </script>
+      <div class="backBtn">
+        <span class="line tLine"></span>
+        <span class="line mLine"></span>
+        <ul style="list-style-type:none;"><li><a href="Website.html" class ="back">
+        <span class="label">Back</span></a></li></ul>
+        <span class="line bLine"></span>
+      </div>
+</form>
+</div>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <link rel="stylesheet" href="subscribe.css">
+</head>
+<body>
+<div class="container">
+                <form name="myform">
+                    <h2>Subscribe</h2>
+                    <div class="form-group margin-below">
+                        <input type="email" class="form-control" id="email" aria-describedby="Email"
+                               placeholder="Email">
+                    </div>
+                    <button onclick="Functionval()" class="btn2 btn-primary">Subscribe</button>
+                    <script>
+                      function Functionval() {  
+                        var email=document.myform.email.value;  
+                        if (email==null || email==""){  
+  alert("Invalid Email");  
+  return false; }
+else{
+    alert("Thank you! Stay connected")
+ }
+}  
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

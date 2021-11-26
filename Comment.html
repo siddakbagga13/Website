@@ -1,0 +1,30 @@
+  <head>
+    <link rel="stylesheet" href="comment.css">
+  </head>
+  <body>
+  <section id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div>
+          </div>
+          </div>
+      <div class="row">
+        <div class="col-6">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primary float-right' type="submit" onclick="myFunction()" value="Add Comment">Add Comment</button>
+
+         <script>
+            function myFunction() {
+           alert("Have a great day!");
+      }
+          </script>
+        </div>
+        <form action= "Comment.html" method = "post">
+        </form>
+      </div>
+    </div>
+  </section>
+  </body>
